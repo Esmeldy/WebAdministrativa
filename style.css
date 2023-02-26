@@ -1,0 +1,138 @@
+.container_header {
+    padding: 3px;
+    height: 15vh;
+}
+.container_header_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.header_nav_img {
+    width: fit-content;
+    width: 30px;
+    height: 30px;
+}
+
+.header_nav_h1 {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.container_main {
+    max-width: 850px;
+    margin: 0 auto;
+    height: 65vh;
+}
+.container_main_ul {
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    
+}
+
+.main_ul_a li{
+    font-size: 3vw;
+}
+
+.main_ul_a {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px 5px;
+    border: 1px solid tomato;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    background-color: rgb(254, 216, 209);
+    /* font-size: 1.7vw; */
+        
+}
+.main_ul_a:hover {
+    background-color: rgb(250, 236, 233);
+    color: rgb(246, 51, 17);
+}
+
+.container_footer {
+    font-size: 'Montserrat', sans-serif;
+    max-width: 850px;
+    margin: auto;
+}
+
+
+.container_footer_div p {
+    font-size: 2vw;
+    padding: 5px 0;
+    border-bottom: 1px solid tomato;
+    opacity: 0.6;
+}
+
+.container_footer_div p:hover{
+    opacity: 1;
+    color: tomato;
+
+}
+
+.container_footer_div p span {
+
+}
+
+@media (min-width: 768px) {
+    .container_header {
+        max-width: 850px;
+        margin: auto;
+    }
+    .container_header_nav {
+        display: block;
+        
+    }
+    .header_nav_img {
+        width: fit-content;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    .header_nav_h1 {
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        top: -15px;
+    }
+    .main_ul_a:hover {
+        background-color: rgb(250, 236, 233);
+        color: rgb(218, 87, 64);
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .main_ul_a li{
+        font-size: 4.5vw;
+    }
+    .main_ul_a:hover {
+        background-color: rgb(250, 236, 233);
+        color: rgb(218, 87, 64);
+    }
+}
+@media (1200px <= width <= 1300px) {
+    .main_ul_a li{
+        font-size: 4vw;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .main_ul_a:hover {
+        background-color: rgb(250, 236, 233);
+        color: rgb(218, 87, 64);
+    }
+}
